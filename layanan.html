@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Katalog dan daftar objek wisata Nusantara terlengkap dengan informasi lokasi, tiket, dan kategori.">
+  <title>WisataNusa - Layanan & Katalog Destinasi</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Header Navigasi Semantik -->
+  <header>
+    <nav class="navbar" aria-label="Navigasi Utama">
+      <div class="logo">WisataNusa</div>
+      <button class="hamburger" id="hamburger-btn" aria-label="Buka Menu Navigasi">&#9776;</button>
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="tentang.html">Tentang</a></li>
+        <li><a href="destinasi.html" class="active" aria-current="page">Destinasi</a></li>
+        <li><a href="galeri.html">Galeri</a></li>
+        <li><a href="kontak.html">Kontak</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Konten Utama -->
+  <main>
+    <!-- Section Judul & Filter -->
+    <section class="catalog-header">
+      <h1>Katalog Informasi & Layanan Wisata</h1>
+      <p>Temukan destinasi impian Anda berdasarkan nama atau kategori tempat wisata.</p>
+      
+      <!-- Form Filter Interaktif (Diolah oleh JavaScript) -->
+      <div class="filter-section" style="margin-top: 1.5rem;">
+        <label for="search-input" class="sr-only">Cari Tempat Wisata:</label>
+        <input type="text" id="search-input" placeholder="Cari nama wisata (misal: Bromo)..." aria-label="Cari tempat wisata">
+
+        <label for="category-filter" class="sr-only">Filter Kategori:</label>
+        <select id="category-filter" aria-label="Filter berdasarkan kategori">
+          <option value="all">Semua Kategori</option>
+          <option value="pantai">Wisata Bahari / Pantai</option>
+          <option value="gunung">Wisata Alam / Gunung</option>
+          <option value="budaya">Wisata Sejarah / Budaya</option>
+        </select>
+      </div>
+    </section>
+
+    <!-- Section Daftar Kartu Objek Wisata (Grid Container) -->
+    <section class="catalog-grid" style="margin-top: 2rem;">
+      <h2 class="sr-only">Daftar Tempat Wisata</h2>
+      
+      <div class="grid-container" id="destinations-list">
+        
+        <!-- Kartu Wisata 1 -->
+        <article class="card destination-card" data-category="pantai">
+          <img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=500&q=80" alt="Pemandangan Pantai Kuta Bali saat matahari terbenam">
+          <div class="card-content">
+            <span class="badge" style="background:#0077b6; color:#fff; padding:0.2rem 0.5rem; border-radius:4px; font-size:0.8rem;">Pantai</span>
+            <h3 style="margin-top:0.5rem;">Pantai Kuta</h3>
+            <p><strong>Lokasi:</strong> Badung, Bali</p>
+            <p><strong>Harga Tiket:</strong> Gratis (Parkir Rp 5.000)</p>
+            <p>Pantai pasir putih ikonik yang terkenal dengan pemandangan sunset dan ombak yang cocok untuk berselancar.</p>
+          </div>
+        </article>
+
+        <!-- Kartu Wisata 2 -->
+        <article class="card destination-card" data-category="gunung">
+          <img src="https://images.unsplash.com/photo-1588668214407-6ea9a6d8c272?auto=format&fit=crop&w=500&q=80" alt="Lautan pasir dan kawah Gunung Bromo">
+          <div class="card-content">
+            <span class="badge" style="background:#2a9d8f; color:#fff; padding:0.2rem 0.5rem; border-radius:4px; font-size:0.8rem;">Gunung</span>
+            <h3 style="margin-top:0.5rem;">Taman Nasional Bromo</h3>
+            <p><strong>Lokasi:</strong> Jawa Timur</p>
+            <p><strong>Harga Tiket:</strong> Rp 29.000 - Rp 34.000</p>
+            <p>Kawasan gunung berapi aktif dengan keindahan sunrise di Penanjakan dan pengalaman berkendara jip di lautan pasir.</p>
+          </div>
+        </article>
+
+        <!-- Kartu Wisata 3 -->
+        <article class="card destination-card" data-category="budaya">
+          <img src="https://images.unsplash.com/photo-1596402184320-417e7178b2cd?auto=format&fit=crop&w=500&q=80" alt="Stupa Megah Candi Borobudur saat pagi hari">
+          <div class="card-content">
+            <span class="badge" style="background:#e76f51; color:#fff; padding:0.2rem 0.5rem; border-radius:4px; font-size:0.8rem;">Budaya</span>
+            <h3 style="margin-top:0.5rem;">Candi Borobudur</h3>
+            <p><strong>Lokasi:</strong> Magelang, Jawa Tengah</p>
+            <p><strong>Harga Tiket:</strong> Rp 50.000 (Wisnus)</p>
+            <p>Candi Buddha terbesar di dunia yang diakui sebagai warisan dunia UNESCO dengan arsitektur pahatan relief yang megah.</p>
+          </div>
+        </article>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer Semantik -->
+  <footer>
+    <p>&copy; 2026 WisataNusa. Dibuat untuk memenuhi Tugas Akhir Perancangan Web.</p>
+  </footer>
+
+  <!-- Script Interaktivitas Filter (DOM) -->
+  <script src="js/script.js"></script>
+</body>
+</html>
