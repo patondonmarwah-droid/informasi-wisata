@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WisataNusa - Daftar Destinasi</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">WisataNusa</div>
+      <button class="hamburger" id="hamburger-btn" aria-label="Toggle menu">&#9776;</button>
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="tentang.html">Tentang</a></li>
+        <li><a href="destinasi.html" class="active">Destinasi</a></li>
+        <li><a href="galeri.html">Galeri</a></li>
+        <li><a href="kontak.html">Kontak</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Eksplorasi Destinasi Wisata</h1>
+    <br>
+    
+    <!-- Filter Section (JavaScript DOM) -->
+    <div class="filter-section">
+      <input type="text" id="search-input" placeholder="Cari tempat wisata...">
+      <select id="category-filter">
+        <option value="all">Semua Kategori</option>
+        <option value="pantai">Pantai</option>
+        <option value="gunung">Gunung</option>
+        <option value="budaya">Budaya</option>
+      </select>
+    </div>
+
+    <!-- Cards Grid -->
+    <div class="grid-container" id="destinations-list">
+      <article class="card destination-card" data-category="pantai">
+        <img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=500&q=80" alt="Pantai Kuta">
+        <div class="card-content">
+          <h3>Pantai Kuta</h3>
+          <p>Kategori: Pantai</p>
+          <p>Destinasi favorit wisatawan lokal dan manca negara.</p>
+        </div>
+      </article>
+
+      <article class="card destination-card" data-category="gunung">
+        <img src="https://images.unsplash.com/photo-1588668214407-6ea9a6d8c272?auto=format&fit=crop&w=500&q=80" alt="Gunung Bromo">
+        <div class="card-content">
+          <h3>Gunung Bromo</h3>
+          <p>Kategori: Gunung</p>
+          <p>Keindahan pemandangan matahari terbit yang memesona.</p>
+        </div>
+      </article>
+
+      <article class="card destination-card" data-category="budaya">
+        <img src="https://images.unsplash.com/photo-1596402184320-417e7178b2cd?auto=format&fit=crop&w=500&q=80" alt="Candi Borobudur">
+        <div class="card-content">
+          <h3>Candi Borobudur</h3>
+          <p>Kategori: Budaya</p>
+          <p>Candi Buddha terbesar di dunia dan warisan budaya UNESCO.</p>
+        </div>
+      </article>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 WisataNusa. Tugas Akhir Perancangan Web.</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
