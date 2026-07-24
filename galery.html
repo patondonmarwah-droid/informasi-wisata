@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Galeri Foto Keindahan Alam Indonesia WisataNusa">
+  <title>WisataNusa - Galeri</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar" aria-label="Navigasi Utama">
+      <div class="logo">WisataNusa</div>
+      <button class="hamburger" id="hamburger-btn" aria-label="Buka Menu Navigasi">&#9776;</button>
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="tentang.html">Tentang</a></li>
+        <li><a href="layanan.html">Destinasi</a></li>
+        <li><a href="galeri.html" class="active" aria-current="page">Galeri</a></li>
+        <li><a href="kontak.html">Kontak</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="gallery-container">
+      <h1>Galeri Keindahan Nusantara</h1>
+      <p>Kumpulan potret momen terbaik dari berbagai pelosok negeri.</p>
+      
+      <div class="gallery-grid">
+        <img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=600&q=80" alt="Pantai Bali saat sunset" class="gallery-img">
+        <img src="https://images.unsplash.com/photo-1588668214407-6ea9a6d8c272?auto=format&fit=crop&w=600&q=80" alt="Gunung Bromo Jawa Timur" class="gallery-img">
+        <img src="https://images.unsplash.com/photo-1596402184320-417e7178b2cd?auto=format&fit=crop&w=600&q=80" alt="Candi Borobudur Magelang" class="gallery-img">
+        <img src="https://images.unsplash.com/photo-1518548419970-58e3b4079ab2?auto=format&fit=crop&w=600&q=80" alt="Pemandangan Alam Indonesia" class="gallery-img">
+      </div>
+    </section>
+
+    <!-- Modal Popup Gambar (Fitur JS) -->
+    <div id="image-modal" class="modal">
+      <span class="close-btn" id="close-modal">&times;</span>
+      <img class="modal-content" id="modal-img" alt="Tampilan Gambar Diperbesar">
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 WisataNusa. Tugas Akhir Perancangan Web.</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
