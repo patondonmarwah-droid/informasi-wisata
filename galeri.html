@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WisataNusa - Galeri Foto</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">WisataNusa</div>
+      <button class="hamburger" id="hamburger-btn" aria-label="Toggle menu">&#9776;</button>
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="tentang.html">Tentang</a></li>
+        <li><a href="destinasi.html">Destinasi</a></li>
+        <li><a href="galeri.html" class="active">Galeri</a></li>
+        <li><a href="kontak.html">Kontak</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <img src="foto1.jpg.jpeg" alt="Foto Galeri 1" width="300">
+    <img src="foto2.jpg.jpeg" alt="Foto Galeri 2" width="300">
+</main>
+    
+  
+    <h1>Galeri Foto Wisata</h1>
+    <p>Klik gambar untuk melihat dalam ukuran penuh.</p>
+    <br>
+
+    <div class="grid-container">
+      <img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=500&q=80" alt="Pantai Bali" class="gallery-img" style="cursor:pointer; width:100%; border-radius:8px;">
+      <img src="https://images.unsplash.com/photo-1588668214407-6ea9a6d8c272?auto=format&fit=crop&w=500&q=80" alt="Gunung Bromo" class="gallery-img" style="cursor:pointer; width:100%; border-radius:8px;">
+      <img src="https://images.unsplash.com/photo-1596402184320-417e7178b2cd?auto=format&fit=crop&w=500&q=80" alt="Candi Borobudur" class="gallery-img" style="cursor:pointer; width:100%; border-radius:8px;">
+    </div>
+
+    <!-- Popup Modal -->
+    <div id="image-modal" class="modal">
+      <span class="close-modal">&times;</span>
+      <img id="modal-img" src="" alt="Pratinjau Gambar">
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 WisataNusa. Tugas Akhir Perancangan Web.</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
